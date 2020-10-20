@@ -437,11 +437,11 @@ android {
 
   buildTypes {
     debug {
-      applicationIdSuffix '.debug'   // Allows to install debug and release builds together
+      applicationIdSuffix  // Allows to install debug and release builds together
       versionNameSuffix '-debug'
       jniDebuggable true           // Enable jni debug build
       zipAlignEnabled true
-      signingConfig signingConfigs.mapswithmeDebug
+      signingConfig signingConfigs.mapswithme
       android.sourceSets.debug.setRoot('flavors/debug')
       resValue 'string', 'app_id', android.defaultConfig.applicationId + applicationIdSuffix
     }

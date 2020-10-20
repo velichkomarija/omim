@@ -91,6 +91,7 @@ public class BookmarksAllSubscriptionFragment extends AbstractBookmarkSubscripti
     items.add(R.id.img3);
     items.add(R.id.img2);
     items.add(R.id.img1);
+    items.add(R.id.img4);
     return items;
   }
 
