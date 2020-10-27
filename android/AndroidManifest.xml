@@ -384,6 +384,7 @@
       android:label="@string/place_description_title"/>
     <activity
       android:name="com.mapswithme.maps.bookmarks.description.BookmarksDescriptionActivity"
+      android:parentActivityName="com.mapswithme.maps.bookmarks.BookmarkListActivity"
       android:label="@string/description_guide"/>
     <activity
       android:name="com.mapswithme.maps.ugc.routes.EditCategoryNameActivity"

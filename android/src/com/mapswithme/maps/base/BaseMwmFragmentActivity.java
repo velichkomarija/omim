@@ -9,6 +9,7 @@ import androidx.annotation.ColorRes;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.annotation.StyleRes;
+import androidx.core.app.NavUtils;
 import androidx.fragment.app.Fragment;
 import androidx.fragment.app.FragmentManager;
 import androidx.appcompat.app.AppCompatActivity;
@@ -269,7 +270,7 @@ public abstract class BaseMwmFragmentActivity extends AppCompatActivity
     if (onBackPressedInternal(fragment))
       return;
 
-    super.onBackPressed();
+    NavUtils.navigateUpFromSameTask(this);
   }
 
   private boolean onBackPressedInternal(@NonNull Fragment currentFragment)

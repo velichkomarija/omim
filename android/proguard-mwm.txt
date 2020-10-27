@@ -52,6 +52,10 @@
 -dontwarn com.google.android.material.**
 -keep class com.google.android.material.** { *; }
 
+-keep class * implements android.os.Parcelable {
+   public static final android.os.Parcelable$Creator *;
+}
+
 -dontwarn androidx.**
 -keep class androidx.** { *; }
 -keep interface androidx.** { *; }
